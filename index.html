@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP Server Index</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>MCP Server Index</h1>
+                <p>A comprehensive list of Model Context Protocol servers</p>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search servers...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="filters">
+            <h3>Filter by Category</h3>
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="reference">Reference Servers</button>
+                <button class="filter-btn" data-filter="official">Official Integrations</button>
+                <button class="filter-btn" data-filter="community">Community Servers</button>
+            </div>
+        </div>
+
+        <div class="servers-container">
+            <section id="reference-servers" class="server-section">
+                <h2>Reference Servers</h2>
+                <div class="servers-grid" id="reference-servers-grid"></div>
+            </section>
+
+            <section id="official-integrations" class="server-section">
+                <h2>Official Integrations</h2>
+                <div class="servers-grid" id="official-integrations-grid"></div>
+            </section>
+
+            <section id="community-servers" class="server-section">
+                <h2>Community Servers</h2>
+                <div class="servers-grid" id="community-servers-grid"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Based on the <a href="https://github.com/modelcontextprotocol/servers" target="_blank">Model Context Protocol Servers</a> repository</p>
+            <p>The Model Context Protocol is open source and maintained by Anthropic</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
